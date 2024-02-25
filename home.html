@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/header__footer.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container ">
+          <div class="row">
+            <div class="col-12">
+              <div class="head">
+                <div class="head__logo">
+                  <a href="home.html">
+                    <img
+                      src="./assets/images/logo.webp"
+                      alt="LOGO"
+                      class="head__logo--img"
+                    />
+                    <span>TRAVELATW</span>
+                  </a>
+                </div>
+                <nav class="head__menu">
+                  <div class="head__menu--pc">
+                    <ul class="head__menu--list">
+                      <li class="head__menu--item">
+                        <a href="./home.html">HOME</a>
+                      </li>
+                      <li class="head__menu--item">
+                        <a href="./book.html">BOOK</a>
+                      </li>
+                      <li class="head__menu--item">
+                        <a href="./contact.html">CONTACT</a>
+                      </li>
+                      <li class="head__menu--item">
+                        <a href="./login.html">LOGIN</a>
+                      </li>
+                      <li class="head__menu--item">
+                        <a href="./register.html">REGISTER</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                
+                <div class="head__cart-and-user head__cart-and-user--pc">
+                    <div class="head__cart">
+                      <div class="head__cart-icon">
+                        <a href="./cart.html">
+                          <i class="fa-solid fa-cart-shopping"></i
+                        ></a>
+                      </div>
+                      <div class="head__cart-quantity"></div>
+                    </div>
+                    <div class="head__user"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head__user head__user--mobile"></div>
+        <label for="nav-mobile-input" class="head__bars">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input
+          type="checkbox"
+          hidden
+          name=""
+          class="input__check"
+          id="nav-mobile-input"
+        />
+  
+        <label for="nav-mobile-input" class="nav__overlay"> </label>
+  
+        <div class="head__menu--mobile">
+          <div class="head__logo--mobile">
+            <a href="home.html">
+              <img
+                src="./assets/images/logo.webp"
+                alt="LOGO"
+                class="head__logo--img--mobile"
+              />
+              <span>TRAVELATW</span>
+            </a>
+          </div>
+          <label for="nav-mobile-input" class="head__menu--mobile--close">
+            <i class="fa-solid fa-x"></i>
+          </label>
+          <hr class="hr__mobile" />
+          <ul class="head__menu--list-mobile">
+
+            <li class="head__menu--item-mobile">
+                <div class="head__cart head__cart--mobile">
+                    <div class="head__cart-icon">
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                    </div>
+                <div class="head__cart-quantity"></div>
+              </div>
+            </li>
+            <li class="head__menu--item-mobile"><a href="./home.html">HOME</a></li>
+            <li class="head__menu--item-mobile"><a href="./book.html">BOOK</a></li>
+            <li class="head__menu--item-mobile">
+              <a href="./contact.html">CONTACT</a>
+            </li>
+            <li class="head__menu--item-mobile">
+              <a href="./login.html">LOGIN</a>
+            </li>
+            <li class="head__menu--item-mobile">
+              <a href="./register.html">REGISTER</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    <!-- Main -->
+    <main>
+        <section class="home" id = "home_page">
+            <div class="home__video">
+                <video muted autoplay loop class="home__video--highlight" type="video/mp4">
+                    <source class="video-highlight__source" src="./assets/video/pexels-rulo-davila-8179018 (1440p).mp4" type="video/mp4">
+                </video>
+                <div class="video__overlay"></div>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="home__content">
+                        <div class="home__content--name">
+                            <span>DISCOVER</span>
+                            </br>
+                            <span>
+                               <i> THE WORLD</i>
+                            </span>                            
+                        </div>
+
+                        <div class="home__content--desc">
+                            <p>
+                                <i>We travel not to escape life, but for life not to escape us</i>
+                            </p>
+                        </div>
+                        <div class="home__content--explore">
+                            <button class="btn btn__explore">
+                                <a href="./book.html">
+                                    EXPLORE NOW
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <i class="fa-solid fa-car"></i>
+                        <h3 class="description__title">CAR RENTALS</h3>
+                        <p class="description__desc">
+                            Car is the right choice for traveling by road, it helps
+                             us move quickly and conveniently to places near and far.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <h3 class="description__title">FLIGHTS</h3>
+                        <p class="description__desc">
+                            Airplane, a wise choice for traveling domestically.
+                             It may be much more convenient than a car,
+                              but it also costs a lot more</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <i class="fa-solid fa-ship"></i>
+                        <h3 class="description__title">CUISES</h3>
+                        <p class="description__desc">
+                            Cruises help us travel and admire the sky, clouds and sea, 
+                            helping us find the breath of ocean waves, seafood and sponges colliding offshore.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__one">           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box__head">
+                            <h2 class="inner__title">WE HAVE THE BEST TOURS</h2>
+                            <div class="inner__desc">
+                                <p>Go on a foreign tour with Travelatw to learn about the impressive traditional cultures of Southeast Asian countries, or go to ancient but romantic Europe, or travel to America and Australia to immerse yourself in modern life. , very interesting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 section__one--list">
+                        <div class="list__img">
+                            <img src="./assets/images/tour1" alt="tour">
+                        </div>
+                        <div class="list__content">
+                            <div class="list__item--date">
+                                Oct 15th - Dec 31th
+                            </div>
+                            <div class="list__item">
+                                <span class="list__item-name">Vung Tau</span>
+                                
+                            </div>
+                            <div class="list__item--prices">
+                                <span>From 2.200.000đ</span>
+                            </div>
+                            <div class="rating list__item_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="list__item--btn">
+                                <button class="btn btn--more">
+                                    <a href="https://cungphuot.info/kinh-nghiem-du-lich-vung-tau-post27689.cp" target="_blank">SEE MORE
+                                      </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 section__one--list">
+                        <div class="list__img">
+                            <img src="./assets/images/tour2" alt="tour">
+                        </div>
+                        <div class="list__content">
+                            <div class="list__item--date">
+                                Jul 1st - Nov 20th
+                            </div>
+                            <div class="list__item">
+                                <span class="list__item-name">Nha Trang</span>
+                                
+                            </div>
+                            <div class="list__item--prices">
+                                <span>From 1.120.000đ</span>
+                            </div>
+                            <div class="rating list__item_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            <div class=" list__item--btn">
+                                <button class="btn btn--more"> 
+                                    <a href="https://cungphuot.info/kinh-nghiem-du-lich-nha-trang-post18912.cp" target="_blank" >SEE MORE
+                                       
+                                      </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 section__one--list">
+                        <div class="list__img">
+                            <img src="./assets/images/tour3" alt="tour">
+                        </div>
+                        <div class="list__content">
+                            <div class="list__item--date">
+                                Oct 15th - Dec 31th
+                            </div>
+                            <div class="list__item">
+                                <span class="list__item-name">Kien Giang</span>
+                                
+                            </div>
+                            <div class="list__item--prices">
+                                <span>From 1.990.000đ</span>
+                            </div>
+                            <div class="rating list__item_rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            <div class="list__item--btn">
+                                <button class="btn btn--more">
+                                    <a href="https://cungphuot.info/kinh-nghiem-du-lich-ha-tien-post28340.cp" target="_blank">SEE MORE
+                                      
+                                      </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section__two background--img">           
+            <div class="container">
+                <div class="row">
+                    <div class="section__two--content">
+                        <div class="content-title">
+                            <span>HA GIANG PACKAGE </span>
+                        </div>
+                        <div class="rating content-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="content-desc">
+                            <p>Ha Giang city is a beautiful city located in a valley, four sides are mountains, 
+                                with Lo river flowing through the city.  
+                                The city has Doi Thong archaeological site located in the heart of the city.
+                            </p>
+                            
+                        </div>
+                        <div class="content--btn">
+                            <button class="btn btn__book">
+                                <a href="book.html">
+                                    SEE MORE
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="section__three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box__head">
+                            <h2 class="inner__title">WHAT OUR CLIENTS SAY ABOUT US</h2>
+                            <div class="inner__desc">
+                                <p>Go on a foreign tour with Travelatw to learn about the impressive traditional cultures of Southeast Asian countries, or go to ancient but romantic Europe, or travel to America and Australia to immerse yourself in modern life. , very interesting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 section__three--block">
+                        <div class="section__three-img">
+                            <img src="./assets/images/room1.webp" alt="Room1">
+                        </div>
+                        <div class="section__three-content">
+                            <div class="section__three-content--two">
+                                <div class="section__three-content--name">
+                                    <h3>Da Lat</h3>
+                                </div>                                
+                                <div class="section__three-content--date">
+                                    <span>Oct 12 2021</span>
+                                </div>
+                            </div>
+                            <div class="section__three-content--title">
+                                <span>"This is a best trip"</span>
+                            </div>
+                            <div class="section__three-content--desc">
+                               <i> <p>If anyone asks about my favorite tourist destination, 
+                                I can answer that day is Dalat. 
+                                Dalat is a tourist city with many famous beautiful.  
+                            </p></i>
+                            </div>
+
+                        </div>
+                    </div>                  
+                    <div class="col-lg-6 col-12 section__three--block">
+                        <div class="section__three-img">
+                            <img src="./assets/images/room2.webp" alt="Room1">
+                        </div>
+                        <div class="section__three-content">
+                            <div class="section__three-content--two">
+
+                                <div class="section__three-content--name">
+                                    <h3>Ha Noi</h3>
+                                </div>
+                                
+                                <div class="section__three-content--date">
+                                    <span>May 2 2019</span>
+                                </div>
+                            </div>
+                            <div class="section__three-content--title">
+                                <span>"This is a best trip"</span>
+                            </div>
+                            <div class="section__three-content--desc">
+                                <i><p>Hanoi, the capital of Vietnam, is not only a place with a
+                                    developed economy but also an ideal tourist destination. 
+                                   Hanoi is famous for 36 ancient streets.
+                               </p></i>
+                            </div>
+
+                        </div>
+                    </div>                  
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 section__three--block">
+                        <div class="section__three-img">
+                            <img src="./assets/images/room3.webp" alt="Room1">
+                        </div>
+                        <div class="section__three-content">
+                            <div class="section__three-content--two">
+                                <div class="section__three-content--name">
+                                    <h3>Da Nang</h3>
+                                </div>
+                            
+                                <div class="section__three-content--date">
+                                    <span>Dec 23 2020</span>
+                                </div>
+                            </div>
+                            <div class="section__three-content--title">
+                                <span>"This is a best trip"</span>
+                            </div>
+                            <div class="section__three-content--desc">
+                                <i><p>Da Nang is very famous for Ba Na Hill tourist area on the top of the mountain.
+                                    The center of this city has many bridges.
+                               </p></i>
+                            </div>
+
+                        </div>
+                    </div>                  
+                    <div class="col-lg-6 col-12 section__three--block">
+                        <div class="section__three-img">
+                            <img src="./assets/images/room4.webp" alt="Room1">
+                        </div>
+                        <div class="section__three-content">
+                            <div class="section__three-content--two">
+                                <div class="section__three-content--name">
+                                    <h3>Gia Lai</h3>
+                                </div>
+                               
+                                <div class="section__three-content--date">
+                                    <span>Jul 15 2020</span>
+                                </div>
+                            </div>
+                            <div class="section__three-content--title">
+                                <span>"This is a best trip"</span>
+                            </div>
+                            <div class="section__three-content--desc">
+                                <i><p>Some interesting destinations for tourists to Gia Lai are night market,
+                                    Thach Dong, Dong Ho lagoon or Thanh Hoang temple.
+                               </p></i>
+                            </div>
+
+                        </div>
+                    </div>                  
+                    
+                </div>
+                
+            </div>
+        </section> -->
+      
+        <div class="section__four">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="box__head">
+                            <h2 class="inner__title">TRENDING NOW</h2>
+                            <div class="inner__desc">
+                                <p>Go on a foreign tour with Travelatw to learn about the impressive traditional cultures of Southeast Asian countries, or go to ancient but romantic Europe, or travel to America and Australia to immerse yourself in modern life. , very interesting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row section__four--one">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend1.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend2.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend3.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend4.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row section__four--two">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend5.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend6.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend7.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">                        
+                        <div class="section__four--item">
+                            <div class="item__img">
+                                <img src="./assets/images/trend8.webp" alt="trend1">                                    
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-name">
+                                    <a href="#S"><span>GRAND HOTEL</span></a>
+                                </div>
+                                <div class="item__desc-prices">
+                                    <span>From $150</span>
+                                </div>
+                                <div class="item__desc-address">
+                                    <span>AN GIANG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Footer -->
+    <!-- <hr> -->
+    <footer class="footer--book">
+        <section class="section__footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 section__footer--content">
+                        <div class="section__footer--info">
+                           <div class="footer--info--heading">
+                                <img src="./assets/images/logo.webp" alt="">
+                                <span>TRAVELATW</span>
+                           </div>
+                           <div class="footer--info--desc">
+                                <p>Go on a foreign tour with Travelatw to learn about the impressive traditional cultures of Southeast Asian countries, or go to ancient but romantic Europe, or travel to America and Australia to immerse yourself in modern life.
+                                </p>
+                           </div>
+                           <div class="footer--info--socials">
+                                <ul class="socials__contact">
+                                    <li>
+                                        <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 section__footer--content">
+                        <div class="section__footer--info">
+                           <div class="footer--info--heading">
+                                <span>BLOG POSTS</span>
+                           </div>
+                           <div class="footer--blogs">
+                                <div class="footer--blogs--info">
+                                    <img src="./assets/images/footer1.webp" alt="">
+                                    <div class="footer--infor--desc">
+                                        <a href="" class="title"> Travel with us this year</a>
+
+                                        <span> July 23 October</span>
+                                    </div>
+                                </div>
+                                <div class="footer--blogs--info">
+                                    <img src="./assets/images/footer2.webp" alt="">
+                                    <div class="footer--infor--desc">
+                                        
+                                        <a href="" class="title"> New destinations for you</a>
+                                        <span> July 23 October</span>
+                                    </div>
+                                </div>
+                                <div class="footer--blogs--info">
+                                    <img src="./assets/images/footer3.webp" alt="">
+                                    <div class="footer--infor--desc">
+                                        <a href="" class="title"> Travel with us this year</a>
+                                        <span> July 23 October</span>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-12 section__footer--content">
+                        <div class="section__footer--info">
+                           <div class="footer--info--heading">
+                            CONTACT INFO
+                           </div>
+                           <div class="footer--info--desc">
+                                <p>Contact with me if you want to know more</p>
+                           </div>
+                           <div class="footer--info footer--info--address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                387/Le Binh quan Cai Rang thanh pho Can Tho
+                           </div>
+                           <div class="footer--info footer--info--phone">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                +84 12345678910
+                           </div>
+                           <div class="footer--info footer--info--email">
+                                <i class="fa-solid fa-envelope"></i>
+                                hongb2110012@student.ctu.edu.vn
+                           </div>
+                           <div class="footer--info footer--info--web">
+                                
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__footer--creator">
+                            <span>Copyright © 2023 By <a href="">Toan_Hong</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cart.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+   
+

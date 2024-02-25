@@ -1,0 +1,591 @@
+/*  Register */
+.register-banner {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/register-bg.png);
+}
+
+.register-banner-text {
+  top: 50%;
+  left: 50%;
+  color: var(--white);
+  font-size: 6rem;
+  font-weight: 900;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+.register__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 100px auto;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register__box .register__img {
+  flex: 1;
+  text-align: center;
+  background-image: url(../images/register-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.register__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#signup-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.register__form-header {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 25px 0 30px;
+  text-align: center;
+}
+
+.register__form-header img {
+  width: 10%;
+  margin-left: 5px;
+  animation: rotate 8s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(135deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(225deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.register__form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.register__form-input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  background-color: #fff;
+  width: 100%;
+  font-size: inherit;
+  padding: 10px 10px 10px 35px;
+  border-radius: 5px;
+}
+
+.register__form-input:focus {
+  border: 1px solid var(--green2);
+}
+
+.register__form-input:focus + i.input-icon {
+  color: var(--green2);
+}
+
+.register__form-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.register__form-group i.input-icon {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.register__form-group i.show-password {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.register__form-submit {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.register__form-submit-btn {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .register__box {
+    flex-direction: column;
+    padding-top: 25px;
+  }
+
+  .register-banner-text {
+    font-size: 4rem;
+  }
+
+  .register__form-group {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .register-banner {
+    height: 55vh;
+  }
+
+  .register-banner-text,
+  .register__form-header img {
+    display: none;
+  }
+
+  .register__form-input::placeholder {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .register__box {
+    width: 100%;
+    margin: 50px 0;
+    box-shadow: none;
+  }
+}
+
+/* General section of register and login page: separation, social, login/register */
+.register__form--separation,
+.login__form--separation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 50%;
+}
+
+.register__form--separation-left,
+.register__form--separation-right,
+.login__form--separation-left,
+.login__form--separation-right {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex: 1;
+}
+
+.register__form--separation-content,
+.login__form--separation-content {
+  padding: 0px 15px 0px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.register__social,
+.login__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 0 30px;
+}
+
+.register__social-link,
+.login__social-link {
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 0 5px 0;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.register__social-link a,
+.login__social-link a {
+  text-align: center;
+  line-height: 38px;
+}
+
+.register__social-link:hover,
+.login__social-link:hover {
+  border: transparent;
+  border-radius: 10px;
+}
+
+.register__social-link:hover a,
+.login__social-link:hover a {
+  color: var(--white);
+}
+
+.register__social-link--fb a,
+.login__social-link--fb a {
+  color: rgb(8, 102, 255);
+}
+
+.register__social-link--fb:hover,
+.login__social-link--fb:hover {
+  background-color: rgb(8, 102, 255);
+}
+
+.register__social-link--insta,
+.login__social-link--insta {
+  font-size: 1.5rem;
+}
+
+.register__social-link--insta a,
+.login__social-link--insta a {
+  color: #fd5949;
+}
+
+.register__social-link--insta:hover,
+.login__social-link--insta:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.register__social-link--twitter a,
+.login__social-link--twitter a {
+  color: rgb(28, 156, 234);
+}
+
+.register__social-link--twitter:hover,
+.login__social-link--twitter:hover {
+  background-color: rgb(28, 156, 234);
+}
+
+.register__social-link--gg a,
+.login__social-link--gg a {
+  color: rgb(243, 0, 28);
+}
+
+.register__social-link--gg:hover,
+.login__social-link--gg:hover {
+  background-color: rgb(243, 0, 28);
+}
+
+.register__login,
+.login__register {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.register__login-message,
+.login__box-register-message {
+  padding: 0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.register__login-link {
+  color: rgb(19, 119, 214);
+}
+
+.register__login-link:hover {
+  font-weight: 600;
+  color: rgb(19, 12, 214);
+  font-size: 1.05rem;
+}
+
+/* General section of register and login page */
+
+/* Page login */
+.login__banner {
+  background-image: url(../images/login.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.login__banner-text {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__box-form {
+  border: 2px solid rgb(224, 224, 228);
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  margin: 50px 0;
+  width: 600px;
+  padding: 15px 35px 25px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__box-header {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.login__box-header--above {
+  margin: 10px 0;
+}
+
+.login__box-header-logo {
+  margin-right: 10px;
+  vertical-align: unset;
+}
+
+.login__box-header-content {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.login__box-header--under {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login__box-form-group .login__form-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.login__box-form-group i {
+  background-color: var(--green2);
+  font-size: 1.5rem;
+  color: var(--white);
+  align-self: center;
+  padding: 1rem 1rem;
+  margin-left: 10px;
+}
+
+.login__form-input {
+  outline: none;
+  background-color: var(--white);
+  border: 1px solid rgb(197, 196, 198);
+  padding: 0.6rem 15px;
+  flex: 1;
+}
+
+.login__form-input + label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(155, 157, 161);
+  padding: 0 6px;
+  background: var(--white);
+  font-size: 1.1rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.login__form-input:focus {
+  border: 1px solid var(--green2);
+}
+
+.login__form-input:focus + label {
+  top: 0;
+  color: var(--green2);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.login__box-form-option-forgot,
+.login__box-form-group--submit {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 35px;
+}
+
+.login__box-form-show-password {
+  flex: 1;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.login__box-form-show-password--btn {
+  cursor: pointer;
+  margin-right: 6px;
+  width: 15px;
+  height: 15px;
+}
+
+.login__box-form-show-password span {
+  vertical-align: text-bottom;
+}
+
+.login__box-form-forgot-password {
+  flex: 1;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.login__box-form-forgot-password a {
+  color: var(--black);
+  outline: none;
+}
+
+.login__box-form-forgot-password:hover a {
+  color: rgb(29, 179, 74);
+}
+
+.login__box-form-submit {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 30px 0 20px;
+}
+
+.login__form--separation {
+  align-self: center;
+  width: 90%;
+}
+
+.login__register-link {
+  color: #0f12d3;
+}
+
+.login__register-link:hover {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: rgb(29, 179, 74);
+}
+
+@media only screen and (max-width: 762px) {
+  .login__box-form {
+    width: 530px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login__banner {
+    height: 70vh;
+  }
+
+  .login__banner-text {
+    display: none;
+  }
+
+  .login__box-form {
+    /* width: 100%; */
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+/* Validation LOGIN form */
+.login__box-form-group.valid .login__form-row input {
+  border: 2px solid var(--green2);
+}
+
+.login__box-form-group.invalid .error-message {
+  color: red;
+  font-size: 0.82rem;
+}
+
+.login__box-form-group.invalid .login__form-row input {
+  border: 2px solid red;
+}
+.login__box-form-group.invalid .login__form-row i {
+  background-color: rgba(255, 0, 0, 0.85);
+}
+.login__box-form-group.invalid .login__form-input + label.invalid {
+  top: 0;
+}
+.login__box-form-group.invalid .login__form-input + label.invalid,
+.login__box-form-group.invalid .login__form-input:focus + label {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.login__box-form-group.valid .login__form-input + label {
+  top: 0;
+  color: var(--green2);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Validation LOGIN form */
+.register__form-group.valid input.register__form-input {
+  border: 2px solid var(--green2);
+}
+.register__form-group.valid input.register__form-input + i {
+  color: var(--green2);
+}
+
+.register__form-group.invalid input.register__form-input {
+  border: 2px solid red;
+}
+.register__form-group.invalid input.register__form-input + i {
+  color: red;
+}
+.register__form-group.invalid small.error-message {
+  color: red;
+  font-size: 0.82rem;
+}

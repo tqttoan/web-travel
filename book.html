@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>BOOK</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/book.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/header__footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="head">
+              <div class="head__logo">
+                <a href="home.html">
+                  <img
+                    src="./assets/images/logo.webp"
+                    alt="LOGO"
+                    class="head__logo--img"
+                  />
+                  <span>TRAVELATW</span>
+                </a>
+              </div>
+              <nav class="head__menu">
+                <div class="head__menu--pc">
+                  <ul class="head__menu--list">
+                    <li class="head__menu--item">
+                      <a href="./home.html">HOME</a>
+                    </li>
+                    <li class="head__menu--item">
+                      <a href="./book.html">BOOK</a>
+                    </li>
+                    <li class="head__menu--item">
+                      <a href="./contact.html">CONTACT</a>
+                    </li>
+                    <li class="head__menu--item">
+                      <a href="./login.html">LOGIN</a>
+                    </li>
+                    <li class="head__menu--item">
+                      <a href="./register.html">REGISTER</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <div class="head__cart-and-user head__cart-and-user--pc">
+                <div class="head__cart">
+                  <div class="head__cart-icon">
+                    <a href="./cart.html">
+                      <i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                  <div class="head__cart-quantity"></div>
+                </div>
+                <div class="head__user"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head__user head__user--mobile"></div>
+      <label for="nav-mobile-input" class="head__bars">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input
+        type="checkbox"
+        hidden
+        name=""
+        class="input__check"
+        id="nav-mobile-input"
+      />
+
+      <label for="nav-mobile-input" class="nav__overlay"> </label>
+
+      <div class="head__menu--mobile">
+        <div class="head__logo--mobile">
+          <a href="home.html">
+            <img
+              src="./assets/images/logo.webp"
+              alt="LOGO"
+              class="head__logo--img--mobile"
+            />
+            <span>TRAVELATW</span>
+          </a>
+        </div>
+        <label for="nav-mobile-input" class="head__menu--mobile--close">
+          <i class="fa-solid fa-x"></i>
+        </label>
+        <hr class="hr__mobile" />
+        <ul class="head__menu--list-mobile">
+          <li class="head__menu--item-mobile">
+            <div class="head__cart head__cart--mobile">
+              <div class="head__cart-icon">
+                <a href="./cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+              <div class="head__cart-quantity"></div>
+            </div>
+          </li>
+          <li class="head__menu--item-mobile">
+            <a href="./home.html">HOME</a>
+          </li>
+          <li class="head__menu--item-mobile">
+            <a href="./book.html">BOOK</a>
+          </li>
+          <li class="head__menu--item-mobile">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+          <li class="head__menu--item-mobile">
+            <a href="./login.html">LOGIN</a>
+          </li>
+          <li class="head__menu--item-mobile">
+            <a href="./register.html">REGISTER</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="book background--img">
+        <div class="flex-container">
+          <div class="book__content">
+            <div class="book__content--name w3-animate-left">
+              <span>BOOK NOW</span>
+            </div>
+            <div class="book__description w3-animate-zoom">
+              <i
+                >“See the world. It’s more fantastic than any dream.” – Ray
+                Bradbury</i
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__one">
+        <div class="flex-container">
+          <div class="flex-item item-one">
+            <div class="id" style="display: none">1</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book1.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>HA LONG</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>3990000</span></div>
+              <div class="item-desc">
+                <p>
+                  Ha Long is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-two">
+            <div class="id" style="display: none">2</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book2.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>KIEN GIANG</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>2600000</span></div>
+              <div class="item-desc">
+                <p>
+                  Kien Giang is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-three">
+            <div class="id" style="display: none">3</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book3.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>CAN THO</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>1990000</span></div>
+              <div class="item-desc">
+                <p>
+                  Can Tho is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-four">
+            <div class="id" style="display: none">4</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book4.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>SOC TRANG</span>"</div>
+
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>1800000</span></div>
+              <div class="item-desc">
+                <p>
+                  Soc Trang is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-five">
+            <div class="id" style="display: none">5</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book5.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>VINH LONG</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>3990000</span></div>
+              <div class="item-desc">
+                <p>
+                  Vinh Long is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-six">
+            <div class="id" style="display: none">6</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book6.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>TRA VINH</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>4000000</span></div>
+              <div class="item-desc">
+                <p>
+                  Tra Vinh is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-seven">
+            <div class="id" style="display: none">7</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book7.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>BEN TRE</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>3000000</span></div>
+              <div class="item-desc">
+                <p>
+                  Ben Tre is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-eight">
+            <div class="id" style="display: none">8</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book8.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>VUNG TAU</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>5990000</span></div>
+              <div class="item-desc">
+                <p>
+                  Vung Tau is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-nine">
+            <div class="id" style="display: none">9</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book9.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>NHA TRANG </span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>2900000</span></div>
+              <div class="item-desc">
+                <p>
+                  Nha Trang is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-ten">
+            <div class="id" style="display: none">10</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book10.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>HOI AN </span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>3990000</span></div>
+              <div class="item-desc">
+                <p>
+                  Hoi An is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-eleven">
+            <div class="id" style="display: none">11</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book11.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>HA NOI </span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>5990000</span></div>
+              <div class="item-desc">
+                <p>
+                  Ha Noi is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+          <div class="flex-item item-twelth">
+            <div class="id" style="display: none">12</div>
+            <div class="item-one__img">
+              <img src="./assets/images/book12.jpeg" alt="" />
+            </div>
+            <div class="item-one__content">
+              <div class="item-one__name">"<span>BAC LIEU"</span>"</div>
+              <div class="rating content-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="item-prices">From <span>1400000</span></div>
+              <div class="item-desc">
+                <p>
+                  Bac Lieu is a highly developed land in tourism and has many
+                  specialties
+                </p>
+              </div>
+              <button class="btn btn--book">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer--book">
+      <section class="section__footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-12 section__footer--content">
+              <div class="section__footer--info">
+                <div class="footer--info--heading">
+                  <img src="./assets/images/logo.webp" alt="" />
+                  <span>TRAVELATW</span>
+                </div>
+                <div class="footer--info--desc">
+                  <p>
+                    Go on a foreign tour with Travelatw to learn about the
+                    impressive traditional cultures of Southeast Asian
+                    countries, or go to ancient but romantic Europe, or travel
+                    to America and Australia to immerse yourself in modern life.
+                  </p>
+                </div>
+                <div class="footer--info--socials">
+                  <ul class="socials__contact">
+                    <li>
+                      <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                      <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 section__footer--content">
+              <div class="section__footer--info">
+                <div class="footer--info--heading">
+                  <span>BLOG POSTS</span>
+                </div>
+                <div class="footer--blogs">
+                  <div class="footer--blogs--info">
+                    <img src="./assets/images/footer1.webp" alt="" />
+                    <div class="footer--infor--desc">
+                      <a href="" class="title"> Travel with us this year</a>
+
+                      <span> July 23 October</span>
+                    </div>
+                  </div>
+                  <div class="footer--blogs--info">
+                    <img src="./assets/images/footer2.webp" alt="" />
+                    <div class="footer--infor--desc">
+                      <a href="" class="title"> New destinations for you</a>
+                      <span> July 23 October</span>
+                    </div>
+                  </div>
+                  <div class="footer--blogs--info">
+                    <img src="./assets/images/footer3.webp" alt="" />
+                    <div class="footer--infor--desc">
+                      <a href="" class="title"> Travel with us this year</a>
+                      <span> July 23 October</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 section__footer--content">
+              <div class="section__footer--info">
+                <div class="footer--info--heading">CONTACT INFO</div>
+                <div class="footer--info--desc">
+                  <p>Contact with me if you want to know more</p>
+                </div>
+                <div class="footer--info footer--info--address">
+                  <i class="fa-solid fa-location-dot"></i>
+                  387/Le Binh quan Cai Rang thanh pho Can Tho
+                </div>
+                <div class="footer--info footer--info--phone">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  +84 12345678910
+                </div>
+                <div class="footer--info footer--info--email">
+                  <i class="fa-solid fa-envelope"></i>
+                  hongb2110012@student.ctu.edu.vn
+                </div>
+                <div class="footer--info footer--info--web"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="section__footer--creator">
+                <span>Copyright © 2023 By <a href="">Toan_Hong</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cart.js"></script>
+    <script>
+      const tourPrices = document.querySelectorAll(".item-prices span");
+      if (tourPrices.length > 0) {
+        tourPrices.forEach((prices) => {
+          let price = prices.textContent;
+          prices.innerHTML = Number(price).toLocaleString("de-DE", {
+            style: "currency",
+            currency: "VND",
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+:root {
+  --white: #fff;
+  --light-gray: #ddd;
+  --logo-color: #f4f4f8;
+  --light-white: #f2e0e0;
+  --background-color: #f8fcf9;
+  --gray: #9a9a9a;
+  --black: #000000;
+  --dark-gray: #2d2d2d;
+  --dark-gray-red: rgba(115, 114, 114, 0.12);
+  --green: #5cb874;
+  --green2: #38a62e;
+  --green3: #0b3d06;
+  --dark-green: rgb(12, 32, 12);
+  --background-green: rgba(68, 150, 91, 0.299);
+  --yellow: #ffc107;
+  --orange: orange;
+  --light-yellow: #ffeb8d;
+  --blue: #244bc1;
+  --background-blue: rgba(7, 58, 109, 0.265);
+  --background-blue2:rgba(4, 35, 65, 0.861);
+  --purple: rgb(54, 10, 54);
+  --font: "Open Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  font-family: var(--font);
+}
+ul {
+  margin: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+hr{
+  margin: 0;
+  padding: 0;
+  border: 1px;
+  background: var(--green3);
+}
+.btn {
+  height: 50px;
+  width: 250px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 30px;
+  transition: all 400ms ease;
+  border: 1px solid #a107e900;
+  background: linear-gradient(to right, var(--green2), var(--blue));
+}
+.btn a {
+  color: var(--white);
+}
+.btn a:hover{
+  color: var(--light-white);
+}
+.rating i {
+  color: var(--yellow);
+}
+/* Background img */
+.background--img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Main */
+main{
+  grid-area: main;
+}
+/*Box */
+.box__head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.box__head .inner__title {
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 90px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.box__head .inner__title::before {
+  content: "";
+  bottom: 1px;
+  height: 1px;
+  width: 120px;
+  display: block;
+  position: absolute;
+  left: calc(50% - 60px);
+  background: var(--light-gray);
+}
+.box__head .inner__title::after {
+  bottom: 0;
+  content: "";
+  height: 3px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  left: calc(50% - 20px);
+  background: var(--green3);
+}
+.box__head .inner__desc {
+  font-size: 15px;
+  color: var(--gray);
+}
+main {
+  grid-area: main;
+}
+
